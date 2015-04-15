@@ -1,0 +1,22 @@
+{% include header.html %}
+
+<section id="hero">
+    <div class="container">
+    	<div class="row">
+    		<div class="col-md-8 hero-content">
+    			<div class="event-meta">
+        			<span class="date">{{site.data.event.event-date}}</span>
+                    <span class="location">{{site.data.event.event-location}} &mdash; {{site.data.event.event-time}}</span>
+    			</div>
+    			
+    			<h1>{{site.data.event.event-title}}</h1>
+    			
+    			<a class="click click-white click-xl" href="#"><i class="fa fa-ticket"></i> Register</a>
+    		</div>
+    	</div>
+    </div>
+</section>
+
+{{content}}
+
+{% include footer.html %}

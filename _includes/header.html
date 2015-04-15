@@ -1,0 +1,49 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700|Roboto:400,700,300' rel='stylesheet' type='text/css'>
+	<meta charset="utf-8">
+    
+    <title>{{site.data.event.event-title}} - {{page.title}}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="EventDay">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+	
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+  
+  <body id="page-{{page.title | downcase}}">
+    <header>
+        {% include main-nav.html %}
+        
+        <span class="hamburger visible-xs-inline-block">
+            <a href="#"><i class="fa fa-reorder"></i></a>
+        </span>
+    </header>
+    
+    <div class="onscroll sticky">
+        {% include main-nav.html %}
+        
+        <a class="click visible-xs-inline-block" href="#"><i class="fa fa-ticket"></i> Register</a>
+        
+        <span class="hamburger visible-xs-inline-block">
+            <i class="fa fa-reorder"></i>
+        </span>
+    </div>
+    
+    <div class="mobile-nav">
+        <i class="fa fa-close"></i>
+        {% include main-nav.html %}
+        <div class="poweredby text-center">
+            This event is powered by <strong>EventDay</strong>.<br>
+            <a href="#">Get your free event site today!</a>
+        </div>
+    </div>

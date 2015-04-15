@@ -1,0 +1,20 @@
+{% include header.html %}
+
+<section id="hero2">
+    <div class="container">
+    	<div class="row">
+    		<div class="col-md-8 hero-content">
+    			<div class="event-meta">
+        			<span class="title">{{site.data.event.event-title}}</span>
+                    <span class="date">{{site.data.event.event-date}} &mdash; {{site.data.event.event-location}} {{site.data.event.event-time}}</span>
+    			</div>
+    			
+    			<h1>{{page.title}}</h1>
+    		</div>
+    	</div>
+    </div>
+</section>
+
+{{content}}
+
+{% include footer.html %}
